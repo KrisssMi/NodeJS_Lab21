@@ -1,0 +1,15 @@
+    {{#each phones}}
+        {{>record}}
+    {{/each}}
+<hr>
+<br>
+<div class="form-part edit" data-key="{{targetPhone.id}}">
+    <label style="font-size: 15px; text-align: left;">FullName: </label>
+        <input type="text" name="fullName" placeholder="FullName here..." value="{{targetPhone.fullName}}" oninput="lockRemoveButton()">
+    <label style="font-size: 15px; text-align: left;" class="label">Phone number: </label>
+        <input type="text" name="phone" placeholder="Phone number here..." value="{{targetPhone.phone}}" oninput="lockRemoveButton()">
+</div>
+
+    <button class="bot8" onclick="updateRecord()">Ok</button>
+    <button class="bot8" onclick="deleteRecord()" id="remove-button">Remove</button>
+    <button class="bot8" onclick="{{goBack}}">Cancel</button>
