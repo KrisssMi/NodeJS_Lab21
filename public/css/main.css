@@ -97,6 +97,7 @@ div.record .new {
     border: #ed6edcb1 1px solid;
     border-radius: 6px;
     margin-top: 4px;
+    overflow-y: scroll;
 }
 
 div.record:hover {

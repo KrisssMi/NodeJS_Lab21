@@ -1,7 +1,7 @@
 function lockRemoveButton() {
   const removeButton = document.getElementById("remove-button");
   if (!removeButton) {
-    return;
+    return; 
   }
   removeButton.setAttribute("disabled", "true");
 }

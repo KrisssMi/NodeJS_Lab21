@@ -1,5 +1,4 @@
 const fs = require("fs");
-const config = require("./../config");
 
 let cellPhones = require("./cellphones") || [];
 
